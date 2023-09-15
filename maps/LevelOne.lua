@@ -9,14 +9,38 @@ return {
   height = 24,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 7,
+  nextlayerid = 8,
   nextobjectid = 54,
   properties = {},
   tilesets = {
     {
-      name = "Bricks",
+      name = "Bricks2.0",
       firstgid = 1,
-      filename = "Bricks.tsx"
+      class = "",
+      tilewidth = 40,
+      tileheight = 40,
+      spacing = 0,
+      margin = 0,
+      columns = 5,
+      image = "Bricks.png",
+      imagewidth = 200,
+      imageheight = 40,
+      objectalignment = "unspecified",
+      tilerendersize = "tile",
+      fillmode = "stretch",
+      tileoffset = {
+        x = 0,
+        y = 0
+      },
+      grid = {
+        orientation = "orthogonal",
+        width = 40,
+        height = 40
+      },
+      properties = {},
+      wangsets = {},
+      tilecount = 5,
+      tiles = {}
     }
   },
   layers = {
@@ -26,7 +50,7 @@ return {
       y = 0,
       width = 13,
       height = 24,
-      id = 1,
+      id = 7,
       name = "Bricks",
       class = "",
       visible = true,
