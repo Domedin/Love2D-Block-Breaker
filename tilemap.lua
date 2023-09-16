@@ -20,8 +20,6 @@ function TileMap:loadMap()
 
     for i, obj in pairs(gameMap.layers["BrickOne"].objects) do
         Brick:new(obj.x, obj.y, Colors.GreenBlock)
-        --print(obj.x)
-        --print(obj.y)
     end
     for i, obj in pairs(gameMap.layers["BrickTwo"].objects) do
         Brick:new(obj.x, obj.y, Colors.LightGreenBlock)
@@ -39,10 +37,7 @@ end
 
 function TileMap:draw()
     for i,obj in ipairs(Bricks) do
-        --local ex, ey = obj:getPosition()
-        love.graphics.draw(obj.sprite, obj.x, obj.y )
-        --print(obj.sprite)
-        --print(obj.x)
-        --print(obj.y)
+        local ex, ey = obj.collider:getPosition()   
+        love.graphics.draw(obj.sprite, ex - obj.sprite:getWidth() / 2, ey - obj.sprite:getHeight() / 2)
     end
 end

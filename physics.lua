@@ -10,6 +10,7 @@ function Physics:load()
     world:addCollisionClass('BlockFour')
     world:addCollisionClass('BlockFive')
     world:addCollisionClass('Ball')
+    world:addCollisionClass('Paddle')
 end
 
 function Physics:update(dt)
