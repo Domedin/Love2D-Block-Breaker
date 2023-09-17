@@ -1,20 +1,73 @@
 Ball = {}
 
 function Ball:load()
-    Ball.startX = love.graphics.getWidth() * 0.5
-    Ball.startY = love.graphics.getHeight() * 0.5
+    Ball.x = love.graphics.getWidth() * 0.5
+    Ball.y = love.graphics.getHeight() * 0.5
     Ball.sprite = love.graphics.newImage("sprites/Ball.png")
     Ball.width = Ball.sprite:getWidth()
     Ball.height = Ball.sprite:getHeight()
-    ball = world:newRectangleCollider(Ball.startX, Ball.startY, Ball.width, Ball.height, {collision_class = "Ball"})
-    ball:setFixedRotation(true)
+    Ball.speed = 600
+    Ball.xVel = 0
+    Ball.yVel = Ball.speed
 end
 
 function Ball:update(dt)
+    Ball:move(dt)
+    Ball:collide()
+end
 
+function Ball:move(dt)
+    Ball.x = Ball.x + Ball.xVel * dt
+    Ball.y = Ball.y + Ball.yVel * dt
+end
+
+function Ball:collide()
+    Ball:collideWallX()
+    Ball:collideWallY()
+    Ball:collidePlayer()
+    Ball:collideBrick()
+end
+
+function Ball:collideWallX()
+    if Ball.x - (Ball.width / 2) < 0 then
+        Ball.x = 0 + (Ball.width / 2)
+        Ball.xVel = -Ball.xVel
+    elseif Ball.x + (Ball.width / 2) > love.graphics.getWidth() then
+        Ball.x = love.graphics.getWidth() - (Ball.width / 2)
+        Ball.xVel = -Ball.xVel
+    end
+end
+
+function Ball:collidePlayer()
+    if checkCollision(Ball, Player) then
+        Ball.xVel = -Ball.speed
+        local middleBall = Ball.y + Ball.height / 2
+        local middlePlayer = Player.y + Player.height / 2
+        local collisionPosition = middleBall - middlePlayer
+        Ball.yVel = collisionPosition * 5
+    end
+end
+
+function Ball:collideWallY()
+    if Ball.y < 0 then
+        Ball.y = 0
+        Ball.yVel = -Ball.yVel
+    end
+end
+
+function Ball:collideBrick()
+    for i,obj in ipairs(Bricks) do
+        if checkCollision(Ball, obj) then
+            Ball.xVel = -Ball.speed
+            local middleBall = Ball.y + Ball.height / 2
+            local middleBrick = obj.y + obj.height / 2
+            local collisionPosition = middleBall - middleBrick
+            Ball.yVel = collisionPosition * 5
+            obj.hit = true
+        end
+    end
 end
 
 function Ball:draw()
-    local bx, by = ball:getPosition()
-    love.graphics.draw(Ball.sprite, bx - Ball.width / 2, by - Ball.height / 2)
+    love.graphics.draw(Ball.sprite, Ball.x - Ball.width / 2, Ball.y - Ball.height / 2)
 end

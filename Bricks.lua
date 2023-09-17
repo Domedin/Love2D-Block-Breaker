@@ -2,12 +2,36 @@ Bricks = {}
 
 Brick = {}
 
+function Brick:checkDead()
+    for i=#Bricks,1,-1 do
+        local brickNum = Bricks[i]
+        if brickNum.hit == true then
+            if brickNum.sprite == Colors.GreenBlock then
+                table.remove(Bricks, i)
+            elseif brickNum.sprite == Colors.LightGreenBlock then
+                brickNum.sprite = Colors.GreenBlock
+                brickNum.hit = false
+            elseif brickNum.sprite == Colors.YellowBlock then
+                brickNum.sprite = Colors.LightGreenBlock
+                brickNum.hit = false
+            elseif brickNum.sprite == Colors.OrangeBlock then
+                brickNum.sprite = Colors.YellowBlock
+                brickNum.hit = false
+            elseif brickNum.sprite == Colors.RedBlock then
+                brickNum.sprite = Colors.OrangeBlock
+                brickNum.hit = false
+            end
+        end
+    end
+end
+
 function Brick:new (x, y, color)
     local newBrick = {}
-    print(color, "x",x)
-    print(color, "y", y)
-    newBrick.collider = world:newRectangleCollider(x, y, 40, 40, {collision_class = "BlockOne"})
-    newBrick.collider:setType('static')
+    newBrick.x = x
+    newBrick.y = y
     newBrick.sprite = color
+    newBrick.width = newBrick.sprite:getWidth()
+    newBrick.height = newBrick.sprite:getHeight()
+    newBrick.hit = false
     table.insert(Bricks, newBrick)
 end

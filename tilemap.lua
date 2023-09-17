@@ -11,33 +11,41 @@ end
 TileMap = {}
 
 function TileMap:load()
-    sti = require 'Libraries/Simple-Tiled-Implementation/sti'
+    TileMap.sti = require 'Libraries/Simple-Tiled-Implementation/sti'
+    TileMap.gameMap = TileMap.sti("maps/LevelTwo.lua")
     TileMap:loadMap()
 end
 
-function TileMap:loadMap()
-    gameMap = sti("maps/LevelOne.lua")
+function TileMap:update(dt)
+    if next(Bricks) == nil then
+        print("Empty table")
+        if TileMap.gameMap == TileMap.sti("maps/LevelTwo.lua") then
+            TileMap.gameMap = TileMap.sti("maps/LevelOne.lua")
+            TileMap:loadMap()
+        end
+     end
+end
 
-    for i, obj in pairs(gameMap.layers["BrickOne"].objects) do
+function TileMap:loadMap()
+    for i, obj in pairs(TileMap.gameMap.layers["BrickOne"].objects) do
         Brick:new(obj.x, obj.y, Colors.GreenBlock)
     end
-    for i, obj in pairs(gameMap.layers["BrickTwo"].objects) do
+    for i, obj in pairs(TileMap.gameMap.layers["BrickTwo"].objects) do
         Brick:new(obj.x, obj.y, Colors.LightGreenBlock)
     end
-    for i, obj in pairs(gameMap.layers["BrickThree"].objects) do
+    for i, obj in pairs(TileMap.gameMap.layers["BrickThree"].objects) do
         Brick:new(obj.x, obj.y, Colors.YellowBlock)
     end
-    for i, obj in pairs(gameMap.layers["BrickFour"].objects) do
+    for i, obj in pairs(TileMap.gameMap.layers["BrickFour"].objects) do
         Brick:new(obj.x, obj.y, Colors.OrangeBlock)
     end
-    for i, obj in pairs(gameMap.layers["BrickFive"].objects) do
+    for i, obj in pairs(TileMap.gameMap.layers["BrickFive"].objects) do
         Brick:new(obj.x, obj.y, Colors.RedBlock)
     end
 end
 
 function TileMap:draw()
     for i,obj in ipairs(Bricks) do
-        local ex, ey = obj.collider:getPosition()   
-        love.graphics.draw(obj.sprite, ex - obj.sprite:getWidth() / 2, ey - obj.sprite:getHeight() / 2)
+        love.graphics.draw(obj.sprite, obj.x, obj.y)
     end
 end
