@@ -6,20 +6,20 @@ function Brick:checkDead()
     for i=#Bricks,1,-1 do
         local brickNum = Bricks[i]
         if brickNum.hit == true then
-            if brickNum.sprite == Colors.GreenBlock then
-                table.remove(Bricks, i)
-            elseif brickNum.sprite == Colors.LightGreenBlock then
-                brickNum.sprite = Colors.GreenBlock
-                brickNum.hit = false
-            elseif brickNum.sprite == Colors.YellowBlock then
-                brickNum.sprite = Colors.LightGreenBlock
+            if brickNum.sprite == Colors.RedBlock then
+                brickNum.sprite = Colors.OrangeBlock
                 brickNum.hit = false
             elseif brickNum.sprite == Colors.OrangeBlock then
                 brickNum.sprite = Colors.YellowBlock
                 brickNum.hit = false
-            elseif brickNum.sprite == Colors.RedBlock then
-                brickNum.sprite = Colors.OrangeBlock
+            elseif brickNum.sprite == Colors.YellowBlock then
+                brickNum.sprite = Colors.LightGreenBlock
                 brickNum.hit = false
+            elseif brickNum.sprite == Colors.LightGreenBlock then
+                brickNum.sprite = Colors.GreenBlock
+                brickNum.hit = false
+            elseif brickNum.sprite == Colors.GreenBlock then
+                table.remove(Bricks, i)
             end
         end
     end

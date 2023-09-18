@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="13" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="81">
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="13" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="91">
  <editorsettings>
   <export format="lua"/>
  </editorsettings>
@@ -9,12 +9,12 @@
  <layer id="7" name="Bricks" width="13" height="24" locked="1">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,5,5,0,3,3,3,0,5,5,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,4,4,4,4,4,4,4,4,4,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,5,5,0,0,0,0,0,5,5,0,0,
+0,0,0,0,5,5,5,5,5,5,0,0,0,
+0,0,0,0,5,4,4,4,4,5,0,0,0,
+0,0,0,0,5,4,3,3,4,5,0,0,0,
+0,0,0,0,5,4,3,3,4,5,0,0,0,
+0,0,0,0,5,4,4,4,4,5,0,0,0,
+0,0,0,0,5,5,5,5,5,5,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -35,30 +35,46 @@
 </data>
  </layer>
  <objectgroup id="2" name="BrickOne" locked="1">
-  <object id="60" x="80" y="80" width="40" height="40"/>
-  <object id="61" x="120" y="80" width="40" height="40"/>
-  <object id="62" x="360" y="80" width="40" height="40"/>
-  <object id="63" x="400" y="80" width="40" height="40"/>
+  <object id="54" x="160" y="40" width="40" height="40"/>
+  <object id="55" x="200" y="40" width="40" height="40"/>
+  <object id="56" x="240" y="40" width="40" height="40"/>
+  <object id="57" x="280" y="40" width="40" height="40"/>
+  <object id="58" x="320" y="40" width="40" height="40"/>
+  <object id="59" x="360" y="40" width="40" height="40"/>
+  <object id="60" x="360" y="80" width="40" height="40"/>
+  <object id="61" x="360" y="120" width="40" height="40"/>
+  <object id="62" x="360" y="160" width="40" height="40"/>
+  <object id="63" x="360" y="200" width="40" height="40"/>
   <object id="64" x="360" y="240" width="40" height="40"/>
-  <object id="65" x="400" y="240" width="40" height="40"/>
-  <object id="66" x="80" y="240" width="40" height="40"/>
-  <object id="67" x="120" y="240" width="40" height="40"/>
+  <object id="65" x="320" y="240" width="40" height="40"/>
+  <object id="66" x="280" y="240" width="40" height="40"/>
+  <object id="67" x="240" y="240" width="40" height="40"/>
+  <object id="69" x="200" y="240" width="40" height="40"/>
+  <object id="70" x="160" y="240" width="40" height="40"/>
+  <object id="71" x="160" y="200" width="40" height="40"/>
+  <object id="72" x="160" y="160" width="40" height="40"/>
+  <object id="73" x="160" y="120" width="40" height="40"/>
+  <object id="74" x="160" y="80" width="40" height="40"/>
  </objectgroup>
  <objectgroup id="3" name="BrickTwo" locked="1">
-  <object id="69" x="80" y="160" width="40" height="40"/>
-  <object id="70" x="120" y="160" width="40" height="40"/>
-  <object id="71" x="160" y="160" width="40" height="40"/>
-  <object id="72" x="200" y="160" width="40" height="40"/>
-  <object id="73" x="240" y="160" width="40" height="40"/>
-  <object id="74" x="280" y="160" width="40" height="40"/>
-  <object id="75" x="320" y="160" width="40" height="40"/>
-  <object id="76" x="360" y="160" width="40" height="40"/>
-  <object id="77" x="400" y="160" width="40" height="40"/>
+  <object id="75" x="200" y="80" width="40" height="40"/>
+  <object id="76" x="240" y="80" width="40" height="40"/>
+  <object id="77" x="280" y="80" width="40" height="40"/>
+  <object id="78" x="320" y="80" width="40" height="40"/>
+  <object id="79" x="200" y="120" width="40" height="40"/>
+  <object id="80" x="200" y="160" width="40" height="40"/>
+  <object id="81" x="200" y="200" width="40" height="40"/>
+  <object id="82" x="240" y="200" width="40" height="40"/>
+  <object id="83" x="280" y="200" width="40" height="40"/>
+  <object id="84" x="320" y="200" width="40" height="40"/>
+  <object id="85" x="320" y="160" width="40" height="40"/>
+  <object id="86" x="320" y="120" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="4" name="BrickThree" locked="1">
-  <object id="78" x="200" y="80" width="40" height="40"/>
-  <object id="79" x="240" y="80" width="40" height="40"/>
-  <object id="80" x="280" y="80" width="40" height="40"/>
+ <objectgroup id="4" name="BrickThree">
+  <object id="87" x="240" y="120" width="40" height="40"/>
+  <object id="88" x="280" y="120" width="40" height="40"/>
+  <object id="89" x="240" y="160" width="40" height="40"/>
+  <object id="90" x="280" y="160" width="40" height="40"/>
  </objectgroup>
  <objectgroup id="5" name="BrickFour" locked="1">
   <object id="6" x="-120" y="-320"/>
