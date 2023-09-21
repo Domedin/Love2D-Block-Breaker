@@ -34,7 +34,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="2" name="BrickOne" locked="1">
+ <objectgroup id="2" name="BrickOne">
   <object id="91" x="40" y="200" width="40" height="40"/>
   <object id="92" x="80" y="200" width="40" height="40"/>
   <object id="93" x="120" y="200" width="40" height="40"/>
@@ -47,7 +47,7 @@
   <object id="100" x="400" y="200" width="40" height="40"/>
   <object id="101" x="440" y="200" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="3" name="BrickTwo" locked="1">
+ <objectgroup id="3" name="BrickTwo">
   <object id="102" x="40" y="160" width="40" height="40"/>
   <object id="103" x="80" y="160" width="40" height="40"/>
   <object id="104" x="120" y="160" width="40" height="40"/>
@@ -60,7 +60,7 @@
   <object id="111" x="400" y="160" width="40" height="40"/>
   <object id="112" x="440" y="160" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="4" name="BrickThree" locked="1">
+ <objectgroup id="4" name="BrickThree">
   <object id="113" x="40" y="120" width="40" height="40"/>
   <object id="114" x="80" y="120" width="40" height="40"/>
   <object id="116" x="120" y="120" width="40" height="40"/>
@@ -73,8 +73,7 @@
   <object id="124" x="400" y="120" width="40" height="40"/>
   <object id="125" x="440" y="120" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="5" name="BrickFour" locked="1">
-  <object id="6" x="-120" y="-320"/>
+ <objectgroup id="5" name="BrickFour">
   <object id="126" x="40" y="80" width="40" height="40"/>
   <object id="127" x="80" y="80" width="40" height="40"/>
   <object id="128" x="120" y="80" width="40" height="40"/>
@@ -87,7 +86,7 @@
   <object id="135" x="400" y="80" width="40" height="40"/>
   <object id="136" x="440" y="80" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="6" name="BrickFive" locked="1">
+ <objectgroup id="6" name="BrickFive">
   <object id="137" x="40" y="40" width="40" height="40"/>
   <object id="138" x="80" y="40" width="40" height="40"/>
   <object id="139" x="120" y="40" width="40" height="40"/>

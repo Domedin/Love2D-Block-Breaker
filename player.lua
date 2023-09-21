@@ -10,8 +10,10 @@ function Player:load()
 end
 
 function Player:update(dt)
-    Player:movement(dt)
-    Player:constraints()
+    if gameManager.gameState then
+        Player:movement(dt)
+        Player:constraints()
+    end
 end
 
 function Player:constraints()

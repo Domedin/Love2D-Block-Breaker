@@ -3,6 +3,7 @@ require("tilemap")
 require("physics")
 require("bricks")
 require("ball")
+require("gameManager")
 
 function love.load()
     Colors:load()
@@ -10,6 +11,7 @@ function love.load()
     Player:load()
     TileMap:load()
     Ball:load()
+    gameManager.load()
 end
 
 function love.update(dt)
@@ -18,6 +20,7 @@ function love.update(dt)
     Ball:update(dt)
     Brick:checkDead()
     TileMap:update(dt)
+    gameManager.update(dt)
 end
 
 function love.draw()
@@ -25,6 +28,7 @@ function love.draw()
     Physics:draw()
     TileMap:draw()
     Ball:draw()
+    gameManager.draw()
 end
 
 function checkCollision(a, b)

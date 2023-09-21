@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 77,
+  nextobjectid = 99,
   properties = {},
   tilesets = {
     {
@@ -103,85 +103,7 @@ return {
       properties = {},
       objects = {
         {
-          id = 54,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 80,
-          y = 80,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 55,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 120,
-          y = 80,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 56,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 400,
-          y = 80,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 57,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 440,
-          y = 80,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 58,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 400,
-          y = 240,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 59,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 440,
-          y = 240,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 60,
+          id = 78,
           name = "",
           type = "",
           shape = "rectangle",
@@ -194,11 +116,89 @@ return {
           properties = {}
         },
         {
-          id = 61,
+          id = 79,
           name = "",
           type = "",
           shape = "rectangle",
           x = 120,
+          y = 240,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 80,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 80,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 81,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 120,
+          y = 80,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 82,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 400,
+          y = 80,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 83,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 440,
+          y = 80,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 84,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 400,
+          y = 240,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 85,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 440,
           y = 240,
           width = 40,
           height = 40,
@@ -223,7 +223,7 @@ return {
       properties = {},
       objects = {
         {
-          id = 62,
+          id = 86,
           name = "",
           type = "",
           shape = "rectangle",
@@ -236,7 +236,7 @@ return {
           properties = {}
         },
         {
-          id = 63,
+          id = 87,
           name = "",
           type = "",
           shape = "rectangle",
@@ -249,7 +249,7 @@ return {
           properties = {}
         },
         {
-          id = 66,
+          id = 88,
           name = "",
           type = "",
           shape = "rectangle",
@@ -262,7 +262,7 @@ return {
           properties = {}
         },
         {
-          id = 67,
+          id = 89,
           name = "",
           type = "",
           shape = "rectangle",
@@ -275,7 +275,7 @@ return {
           properties = {}
         },
         {
-          id = 68,
+          id = 90,
           name = "",
           type = "",
           shape = "rectangle",
@@ -288,7 +288,7 @@ return {
           properties = {}
         },
         {
-          id = 69,
+          id = 91,
           name = "",
           type = "",
           shape = "rectangle",
@@ -301,7 +301,7 @@ return {
           properties = {}
         },
         {
-          id = 70,
+          id = 92,
           name = "",
           type = "",
           shape = "rectangle",
@@ -314,7 +314,7 @@ return {
           properties = {}
         },
         {
-          id = 71,
+          id = 93,
           name = "",
           type = "",
           shape = "rectangle",
@@ -327,7 +327,7 @@ return {
           properties = {}
         },
         {
-          id = 72,
+          id = 94,
           name = "",
           type = "",
           shape = "rectangle",
@@ -340,7 +340,7 @@ return {
           properties = {}
         },
         {
-          id = 73,
+          id = 95,
           name = "",
           type = "",
           shape = "rectangle",
@@ -369,7 +369,7 @@ return {
       properties = {},
       objects = {
         {
-          id = 74,
+          id = 96,
           name = "",
           type = "",
           shape = "rectangle",
@@ -382,7 +382,7 @@ return {
           properties = {}
         },
         {
-          id = 75,
+          id = 97,
           name = "",
           type = "",
           shape = "rectangle",
@@ -395,7 +395,7 @@ return {
           properties = {}
         },
         {
-          id = 76,
+          id = 98,
           name = "",
           type = "",
           shape = "rectangle",
@@ -422,21 +422,7 @@ return {
       parallaxx = 1,
       parallaxy = 1,
       properties = {},
-      objects = {
-        {
-          id = 6,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = -120,
-          y = -320,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        }
-      }
+      objects = {}
     },
     {
       type = "objectgroup",

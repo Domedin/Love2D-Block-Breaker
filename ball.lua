@@ -6,14 +6,16 @@ function Ball:load()
     Ball.sprite = love.graphics.newImage("sprites/Ball.png")
     Ball.width = Ball.sprite:getWidth()
     Ball.height = Ball.sprite:getHeight()
-    Ball.speed = 600
+    Ball.speed = 1500
     Ball.xVel = 0
     Ball.yVel = Ball.speed
 end
 
 function Ball:update(dt)
-    Ball:move(dt)
-    Ball:collide()
+    if gameManager.gameState then
+        Ball:move(dt)
+        Ball:collide()
+    end
 end
 
 function Ball:move(dt)

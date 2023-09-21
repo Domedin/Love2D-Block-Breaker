@@ -23,18 +23,28 @@ function TileMap:update(dt)
         if TileMap.gameMap == 1 then
             TileMap.gameMap = 2
             TileMap:loadMap()
+            Ball:load()
+            gameManager.gameState = false
         elseif TileMap.gameMap == 2 then
             TileMap.gameMap = 3
             TileMap:loadMap()
+            Ball:load()
+            gameManager.gameState = false
         elseif TileMap.gameMap == 3 then
             TileMap.gameMap = 4
             TileMap:loadMap()
+            Ball:load()
+            gameManager.gameState = false
         elseif TileMap.gameMap == 4 then
             TileMap.gameMap = 5
             TileMap:loadMap()
+            Ball:load()
+            gameManager.gameState = false
         elseif TileMap.gameMap == 5 then
             TileMap.gameMap = 1
             TileMap:loadMap()
+            Ball:load()
+            gameManager.gameState = false
         end
     end
 end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="13" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="91">
  <editorsettings>
-  <export format="lua"/>
+  <export target="LevelTwo.lua" format="lua"/>
  </editorsettings>
  <tileset firstgid="1" name="Bricks2.0" tilewidth="40" tileheight="40" tilecount="5" columns="5">
   <image source="Bricks.png" width="200" height="40"/>
@@ -34,7 +34,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="2" name="BrickOne" locked="1">
+ <objectgroup id="2" name="BrickOne">
   <object id="54" x="160" y="40" width="40" height="40"/>
   <object id="55" x="200" y="40" width="40" height="40"/>
   <object id="56" x="240" y="40" width="40" height="40"/>
@@ -56,7 +56,7 @@
   <object id="73" x="160" y="120" width="40" height="40"/>
   <object id="74" x="160" y="80" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="3" name="BrickTwo" locked="1">
+ <objectgroup id="3" name="BrickTwo">
   <object id="75" x="200" y="80" width="40" height="40"/>
   <object id="76" x="240" y="80" width="40" height="40"/>
   <object id="77" x="280" y="80" width="40" height="40"/>
@@ -76,8 +76,6 @@
   <object id="89" x="240" y="160" width="40" height="40"/>
   <object id="90" x="280" y="160" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="5" name="BrickFour" locked="1">
-  <object id="6" x="-120" y="-320"/>
- </objectgroup>
- <objectgroup id="6" name="BrickFive" locked="1"/>
+ <objectgroup id="5" name="BrickFour"/>
+ <objectgroup id="6" name="BrickFive"/>
 </map>

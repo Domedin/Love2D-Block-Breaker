@@ -34,16 +34,15 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="2" name="BrickOne" locked="1"/>
- <objectgroup id="3" name="BrickTwo" locked="1"/>
- <objectgroup id="4" name="BrickThree" locked="1">
+ <objectgroup id="2" name="BrickOne"/>
+ <objectgroup id="3" name="BrickTwo"/>
+ <objectgroup id="4" name="BrickThree">
   <object id="91" x="320" y="200" width="40" height="40"/>
   <object id="92" x="160" y="200" width="40" height="40"/>
   <object id="93" x="160" y="40" width="40" height="40"/>
   <object id="94" x="320" y="40" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="5" name="BrickFour" locked="1">
-  <object id="6" x="-120" y="-320"/>
+ <objectgroup id="5" name="BrickFour">
   <object id="95" x="200" y="80" width="40" height="40"/>
   <object id="96" x="240" y="80" width="40" height="40"/>
   <object id="97" x="280" y="80" width="40" height="40"/>
@@ -53,7 +52,7 @@
   <object id="101" x="280" y="160" width="40" height="40"/>
   <object id="102" x="280" y="120" width="40" height="40"/>
  </objectgroup>
- <objectgroup id="6" name="BrickFive" locked="1">
+ <objectgroup id="6" name="BrickFive">
   <object id="103" x="240" y="120" width="40" height="40"/>
  </objectgroup>
 </map>

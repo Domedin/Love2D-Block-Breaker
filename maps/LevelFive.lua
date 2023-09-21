@@ -580,19 +580,6 @@ return {
       properties = {},
       objects = {
         {
-          id = 6,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = -120,
-          y = -320,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
           id = 126,
           name = "",
           type = "",
