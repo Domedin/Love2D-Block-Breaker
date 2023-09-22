@@ -6,7 +6,7 @@ function Ball:load()
     Ball.sprite = love.graphics.newImage("sprites/Ball.png")
     Ball.width = Ball.sprite:getWidth()
     Ball.height = Ball.sprite:getHeight()
-    Ball.speed = 1500
+    Ball.speed = 600
     Ball.xVel = 0
     Ball.yVel = Ball.speed
 end
@@ -28,6 +28,7 @@ function Ball:collide()
     Ball:collideWallY()
     Ball:collidePlayer()
     Ball:collideBrick()
+    Ball:collideFloor()
 end
 
 function Ball:collideWallX()
@@ -67,6 +68,13 @@ function Ball:collideBrick()
             Ball.yVel = collisionPosition * 5
             obj.hit = true
         end
+    end
+end
+
+function Ball:collideFloor()
+    if Ball.y > love.graphics.getHeight() - (Ball.height / 2) then
+        TileMap:loadMap()
+        Ball:load()
     end
 end
 

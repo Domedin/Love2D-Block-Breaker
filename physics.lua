@@ -1,7 +1,7 @@
 Physics = {}
 
 function Physics:load()
-    wf = require 'libraries/windfield/windfield'
+    wf = require 'Libraries/windfield/windfield'
     world = wf.newWorld(0, 0, false)
 
     world:addCollisionClass('BlockOne')
